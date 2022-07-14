@@ -651,6 +651,7 @@ An interface containing the options used when creating a map.
 | **`zoom`**             | <code>number</code>                       | Sets the zoom of the map.                                      |                    |
 | **`androidLiteMode`**  | <code>boolean</code>                      | Enables image-based lite mode on Android.                      | <code>false</code> |
 | **`devicePixelRatio`** | <code>number</code>                       | Override pixel ratio for native map.                           |                    |
+| **`disableDefaultUI`** | <code>boolean</code>                      |                                                                |                    |
 
 
 #### LatLng
@@ -803,12 +804,11 @@ The callback function to be called when map events are emitted.
 
 #### MapType
 
-| Members         | Value                    | Description                              |
-| --------------- | ------------------------ | ---------------------------------------- |
-| **`Normal`**    | <code>'Normal'</code>    | Basic map.                               |
-| **`Hybrid`**    | <code>'Hybrid'</code>    | Satellite imagery with roads and labels. |
-| **`Satellite`** | <code>'Satellite'</code> | Satellite imagery with no labels.        |
-| **`Terrain`**   | <code>'Terrain'</code>   | Topographic data.                        |
-| **`None`**      | <code>'None'</code>      | No base map tiles.                       |
+| Members         | Value                    | Description                                                                        |
+| --------------- | ------------------------ | ---------------------------------------------------------------------------------- |
+| **`HYBRID`**    | <code>'hybrid'</code>    | This map type displays a transparent layer of major streets on satellite images.   |
+| **`ROADMAP`**   | <code>'roadmap'</code>   | This map type displays a normal street map.                                        |
+| **`SATELLITE`** | <code>'satellite'</code> | This map type displays satellite images.                                           |
+| **`TERRAIN`**   | <code>'terrain'</code>   | This map type displays maps with physical features such as terrain and vegetation. |
 
 </docgen-api>

@@ -60,6 +60,8 @@ export interface GoogleMapConfig {
    * Override pixel ratio for native map.
    */
   devicePixelRatio?: number;
+
+  disableDefaultUI?: boolean;
 }
 
 /**
@@ -103,25 +105,23 @@ export interface CameraConfig {
 
 export enum MapType {
   /**
-   * Basic map.
+   * This map type displays a transparent layer of major streets on satellite
+   * images.
    */
-  Normal = 'Normal',
+  HYBRID = 'hybrid',
   /**
-   * Satellite imagery with roads and labels.
+   * This map type displays a normal street map.
    */
-  Hybrid = 'Hybrid',
+  ROADMAP = 'roadmap',
   /**
-   * Satellite imagery with no labels.
+   * This map type displays satellite images.
    */
-  Satellite = 'Satellite',
+  SATELLITE = 'satellite',
   /**
-   * Topographic data.
+   * This map type displays maps with physical features such as terrain and
+   * vegetation.
    */
-  Terrain = 'Terrain',
-  /**
-   * No base map tiles.
-   */
-  None = 'None',
+  TERRAIN = 'terrain',
 }
 
 /**
